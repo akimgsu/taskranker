@@ -1,59 +1,46 @@
-# Myapp
+# TaskRanker
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.5.
+This is a simple yet powerful single-page application for managing your daily tasks. Built with the latest version of Angular, it provides a clean, modern, and responsive user interface for adding, viewing, and deleting tasks.
 
-## Development server
+## Features
 
-To start a local development server, run:
+*   **Create Tasks**: Quickly add new tasks to your list.
+*   **Dynamic Difficulty**: Tasks are automatically assigned a difficulty level (Easy, Medium, Hard) based on the length of their description.
+*   **Mark as Complete**: Toggle the completion status of each task.
+*   **Delete Tasks**: Remove tasks from your list.
+*   **Responsive Design**: The application is fully responsive and works great on both desktop and mobile devices.
 
-```bash
-ng serve
-```
+## Getting Started
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+To get a local copy up and running, follow these simple steps.
 
-## Code scaffolding
+### Prerequisites
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+*   Node.js and npm installed. You can download them from [nodejs.org](https://nodejs.org/).
 
-```bash
-ng generate component component-name
-```
+### Installation
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+1.  Clone the repository:
+    ```sh
+    git clone https://github.com/your-username/taskranker.git
+    ```
+2.  Navigate to the project directory:
+    ```sh
+    cd taskranker
+    ```
+3.  Install NPM packages:
+    ```sh
+    npm install
+    ```
 
-```bash
-ng generate --help
-```
+## Development Server
 
-## Building
+Run `ng serve` or `npm start` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-To build the project run:
+## Build
 
-```bash
-ng build
-```
+Run `ng build` or `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Further Help
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
