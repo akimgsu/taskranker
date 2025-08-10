@@ -1,0 +1,12 @@
+
+    <div class="new-task-box">
+      <h3 class="section-title">New Task</h3>
+      <div class="task-input-container">
+        <mat-form-field appearance="outline" class="task-input-field">
+          <mat-label>Task description</mat-label>
+          <input matInput [(ngModel)]="taskDescription" (keyup.enter)="addTask()" placeholder="Enter task description">
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="addTask()">Create Task</button>
+      </div>
+    </div>
+  

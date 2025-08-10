@@ -1,0 +1,23 @@
+
+    app-task-input .new-task-box {
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .section-title {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 1.2em;
+      color: #3f51b5;
+    }
+    .task-input-container {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .task-input-field {
+      flex-grow: 1;
+    }
+  

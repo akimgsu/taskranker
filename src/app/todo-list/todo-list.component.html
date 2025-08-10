@@ -1,0 +1,24 @@
+    <h3 class="section-title">Task List</h3>
+    @if (tasks().length > 0) {
+      <mat-card>
+        <mat-card-content>
+          <mat-list>
+            @for (task of tasks(); track task.id) {
+              <mat-list-item [class.completed]="task.completed">
+                <div class="task-content">
+                  <mat-checkbox (change)="toggleCompletion.emit(task)" [checked]="task.completed"></mat-checkbox>
+                  <span class="difficulty-tag" [class]="'difficulty-' + task.difficulty.replace(' ', '-')">{{ task.difficulty | titlecase }}</span>
+                  <span class="description">{{ task.description }}</span>
+                  <button mat-icon-button color="warn" (click)="deleteTask.emit(task)" aria-label="Delete task">
+                    <mat-icon>delete</mat-icon>
+                  </button>
+                </div>
+              </mat-list-item>
+            }
+          </mat-list>
+        </mat-card-content>
+      </mat-card>
+    } @else {
+      <p>No tasks yet. Add a new task above!</p>
+    }
+  
